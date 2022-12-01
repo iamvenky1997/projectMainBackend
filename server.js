@@ -5,12 +5,12 @@ const app = express()
 const cors = require('cors')
 app.use(express.json())
 app.use(cors())
-const hostname = "0.0.0.0"
+const port = process.env.PORT || 3030
 
 try{
     mongoose.connect("mongodb+srv://venkatesh:venkatesh@cluster0.epav24e.mongodb.net/?retryWrites=true&w=majority").then(() => console.log("db connected..."))
     
-    app.listen(3000,hostname,() => console.log("server created..."))
+    app.listen(port ,() => console.log("server created..."))
 }catch(err){
     console.log(err)
 }
