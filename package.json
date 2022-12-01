@@ -4,5 +4,25 @@
     "express": "^4.18.2",
     "mongoose": "^6.7.5",
     "nodemon": "^2.0.20"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo success"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "model.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamvenky1997/projectMainBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamvenky1997/projectMainBackend/issues"
+  },
+  "homepage": "https://github.com/iamvenky1997/projectMainBackend#readme",
+  "description": ""
 }
